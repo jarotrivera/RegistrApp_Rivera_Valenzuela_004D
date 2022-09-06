@@ -1,0 +1,62 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/" text="Volver" color="primary" mode="ios"></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="inicio">
+  <div class="middle">
+    <p id="titulo"> Registro cuenta Estudiante</p>
+    
+    <img class="foto1" src="../../assets/fotodocente.PNG">
+
+    <div class="box">
+     <form #loginForm="ngForm">
+       <p>Porfavor ingrese los datos</p>
+
+       <ion-item>
+         <ion-label position="floating">Ingrese Correo Duoc</ion-label>
+         <ion-input type="email" placeholder="Ingrese Correo Duoc Alumno" name="email" required email
+         pattern="[A-Za-z0-9._%+-]{3,}@[a-zA-Z]{3,}([.]{1}[a-zA-Z]{2,}|[.]{1}[a-zA-Z]{2,}[.]{1}[a-zA-Z]{2,})"></ion-input>
+       </ion-item>
+
+       
+       <ion-item>
+        <ion-label position="floating">Ingrese Nombre</ion-label>
+        <ion-input type="text" placeholder="Ingrese nombre" name="nombre" required min="2"></ion-input>
+      </ion-item>
+
+
+         <ion-item>
+          <ion-label position="floating"> Ingrese Contraseña</ion-label>
+          <ion-input type="password" placeholder="Password" name="password" required min="4"></ion-input>
+        </ion-item>
+
+        <ion-item>
+          <ion-label position="floating">Ingrese Sede</ion-label>
+          <ion-input type="text" placeholder="Ingrese Sede" name="sede" required></ion-input>
+        </ion-item>
+
+        <ion-item>
+          <ion-label position="floating">Ingrese Carrera</ion-label>
+          <ion-input type="text" placeholder="Ingrese Carrera" name="carrera" required></ion-input>
+        </ion-item>
+
+        
+        <ion-item>
+          <ion-label floating>Foto Perfil<br>(opcional)</ion-label>
+          <ion-input type="file" placeholder="Cargue Foto" name="foto"></ion-input>
+        </ion-item>
+
+
+        <div class="btn">
+          <ion-button [routerLink]="['/login']">Registrar</ion-button>
+        </div>
+  
+     </form>
+    </div>
+ </div>
+</ion-content>
+

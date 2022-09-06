@@ -1,0 +1,27 @@
+
+ion-menu-button {
+  color: var(--ion-color-primary);
+}
+
+ion-content.inicio{
+  --background:url(../../assets/fondo.PNG) no-repeat center ;
+
+}
+
+.btninicio{
+  color: #f5f5f5;
+  background-color:#F78D90;
+  width: 260px;
+  height: 100px;
+  border-radius: 30px;
+  font-family:'Poppins';
+  
+}
+
+#container{
+  text-align: center;
+  position: relative;
+  left: 3px;
+  right: 10px;
+  top:75%;
+}

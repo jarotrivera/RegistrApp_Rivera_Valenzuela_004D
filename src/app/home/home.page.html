@@ -1,0 +1,18 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-button (click)="onClick()">
+        <ion-icon slot="start" name="menu"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+
+</ion-header>
+
+<ion-content class="inicio">
+  <div id="container">
+    <ion-button [routerLink]="['/login']" expand= "undefined" fill="clear" shape="round" class="btninicio" size="large">
+      INICIAR
+    </ion-button>
+  </div>
+</ion-content>

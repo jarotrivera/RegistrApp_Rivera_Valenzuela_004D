@@ -1,0 +1,41 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/" text="Volver" color="primary" mode="ios"></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="inicio">
+  <div class="middle">
+    <p id="titulo"> Bienvenido Estudiante</p>
+    
+    <img class="foto1" src="../../assets/fotodocente.PNG">
+
+    <div class="box">
+     <form #loginForm="ngForm">
+       <p>Porfavor Logear Tu Cuenta Duoc</p>
+
+       <ion-item>
+         <ion-label position="floating">Ingrese Correo Duoc Alumno</ion-label>
+         <ion-input type="email" placeholder="Ingrese Correo Duoc Alumno" name="email" required email></ion-input>
+       </ion-item>
+
+
+         <ion-item>
+          <ion-label position="floating"> Ingrese Contraseña</ion-label>
+          <ion-input type="password" placeholder="Password" name="password" required></ion-input>
+        </ion-item>
+
+        <p id="claveolvidada" routerLink=""> Olvidaste Tu Contraseña?</p>
+        <p id="claveolvidada" routerLink="/registro-alumno">No tienes cuenta?</p>
+
+        <div class="btn">
+          <ion-button [routerLink]="['/inicio-alumno']" [disable]="loginForm.invalid">Logear</ion-button>
+        </div>
+  
+     </form>
+    </div>
+ </div>
+</ion-content>
+
